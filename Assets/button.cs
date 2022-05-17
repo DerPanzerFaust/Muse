@@ -7,7 +7,7 @@ public class button : MonoBehaviour
     public GameObject buttons;
    public void buttonmoment()
     {
-        Debug.Log("A");
+        Debug.Log("Clicked on button");
         Destroy(buttons);
     }
     
@@ -15,18 +15,18 @@ public class button : MonoBehaviour
     {
         StopCoroutine(timer());
         StopAllCoroutines();
-        Debug.Log("stopped");
+        Debug.Log("stopped hovering over.");
     }
     public void hover()
     {
-        Debug.Log("waws");
+        Debug.Log("Currently located above button");
         StartCoroutine(timer());
     }
 
     IEnumerator timer()
     {
         yield return new WaitForSeconds(2);
-        Debug.Log("sopo");
+        Debug.Log("Hovering above button for amount of time");
     }
 
 
