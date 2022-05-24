@@ -16,7 +16,7 @@ public class LookatCube : MonoBehaviour
     private void OnMouseDown()
     {
         Destroy(gameObject);
-        Instantiate(aPrefab, new Vector3(0, 0.2f, -2.5f), Quaternion.identity);
+        Instantiate(aPrefab, new Vector3(0.1594f, 0.2912f, 1.38f), Quaternion.identity);
 
         Debug.Log("clicked");
     }
