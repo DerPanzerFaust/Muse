@@ -5,16 +5,6 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
-    RecentlyUsedSceneGuid-0:
-      value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
-      flags: 0
-    RecentlyUsedSceneGuid-1:
-<<<<<<< HEAD
-      value: 56090d5504000f5954570f274475094442161a732f7e76662b2d4e67e3b7313d
-=======
-      value: 5207520256505b0a550d587211265b44134e4b292f297065287c1c6be3e13539
->>>>>>> itemsToCanvas
-      flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0
