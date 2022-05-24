@@ -6,6 +6,7 @@ public class LookatCube : MonoBehaviour
 {
 
     public Transform player;
+    public GameObject aPrefab;
 
     private void Update()
     {
@@ -14,7 +15,8 @@ public class LookatCube : MonoBehaviour
 
     private void OnMouseDown()
     {
-        transform.position = new Vector3(0, 0.5f, -2.5f);
+        Destroy(gameObject);
+        Instantiate(aPrefab, new Vector3(0, 0.2f, -2.5f), Quaternion.identity);
 
         Debug.Log("clicked");
     }
