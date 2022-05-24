@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b1683211ace6b1b4486cde1d8ec5cf59
+=======
+guid: 52934247b3a434448921e5c05f3d8ceb
+>>>>>>> cameraControl
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
