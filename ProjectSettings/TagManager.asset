@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - item1
+  - item2
+  - Item3
+  - Item4
+  - Item5
+  - Item6
+  - Item7
+  - Item8
+  - Item9
   layers:
   - Default
   - TransparentFX

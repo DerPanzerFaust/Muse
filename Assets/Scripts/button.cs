@@ -5,8 +5,39 @@ using UnityEngine;
 public class button : MonoBehaviour
 {
     public GameObject buttons;
-    public PlayerData player;
-   public void ButtonforItem1()
+    public Leveraction lever;
+    public PlayerData PlayerData;
+    
+
+    public void Combine()
+    {
+        if (lever.fusion1 == true)
+        {
+            Debug.Log("combined item 1 n 2");
+           PlayerData.tool1 = true;
+            lever.item1.isOn = false;
+            lever.item2.isOn = false;
+            lever.item3.isOn = false;
+            lever.item4.isOn = false;
+        }
+
+        if (lever.fusion2 == true)
+        {
+            Debug.Log("combined item 3 n 4");
+           PlayerData.tool2 = true;
+            lever.item1.isOn = false;
+            lever.item2.isOn = false;
+            lever.item3.isOn = false;
+            lever.item4.isOn = false;
+        }
+      
+
+
+
+    }
+
+    /*
+    public void ButtonforItem1()
     {
         Debug.Log("Clicked on button1");
         player.item = true;
@@ -18,17 +49,7 @@ public class button : MonoBehaviour
         Debug.Log("Clicked on button2");
         player.item2 = true;
     }
-    public void Combine()
-    {
-        if (player.item == true && player.item2 == true)
-        {
-            Debug.Log("combined");
-        }
-        else
-        {
-            Debug.Log("No items to combine");
-        }
-    }
+
 
     public void stop()
     {
@@ -49,5 +70,5 @@ public class button : MonoBehaviour
     }
 
 
-
+    */
 }

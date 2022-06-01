@@ -8,9 +8,10 @@ public class UI_help : MonoBehaviour
 
     public GameObject smollui;
     public GameObject bigui;
-    public bool a = true;
-    public bool alwdtomv;
-    public int speed = 6;
+    public GameObject Craftingsys;
+    public bool switchcraft = false;
+    public bool switchingMenu = false;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -21,17 +22,34 @@ public class UI_help : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            Debug.Log("Should be switching Craftmenu");
+            switchcraft = !switchcraft;
+            if(switchcraft == true)
+            {
+                Craftingsys.SetActive(true);
+            }
+
+            if (switchcraft == false)
+            {
+                Craftingsys.SetActive(false);
+            }
+
+
+        }
+
         if (Input.GetKeyDown(KeyCode.O))
         {
-            Debug.Log("Should be switching");
-            a = !a;
-            if (a == true)
+            Debug.Log("Should be switching Helpmenu");
+            switchingMenu = !switchingMenu;
+            if (switchingMenu == true)
             {
                 Debug.Log("true");
                 smollui.SetActive(true);
                 bigui.SetActive(false);
             }
-            if (a == false)
+            if (switchingMenu == false)
             {
                 Debug.Log("false");
                 smollui.SetActive(false);
@@ -41,12 +59,5 @@ public class UI_help : MonoBehaviour
             
      
     } 
-
-    void movement()
-    {
-
-    }
-
-
 }
 
