@@ -19,15 +19,16 @@ Je staat in een atelier, er staat een leeg canvas voor je, alleen je vult het ni
 De gameplay heeft het “how not to be seen” gedeelte van Hito in gedachten, niet persé alleen met de verstopte items maar ook dat de oplossing om bij iets te komen niet altijd helemaal is wat het lijkt.
 ___________________________________________________________________________________________
 ## Tools:
-Unity 
-Visual Studio
-Photoshop
+* Unity 
+* Visual Studio
+* Photoshop
 ___________________________________________________________________________________________
 ## Code Conventies:
-We werken in C#
-Debug bij functies zodat alles duielijk is in de console
-C# Comments om functies te verduidelijken
+* We werken in C#
+* Debug bij functies zodat alles duielijk is in de console
+* C# Comments om functies te verduidelijken
 ___________________________________________________________________________________________
 ## Art Conventies:
-Lijn Dikte: 6px
-Schaduw: Three Tone Shading
+* Lijn Dikte: 6px
+* Schaduw: Three Tone Shading
+___________________________________________________________________________________________
