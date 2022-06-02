@@ -1,7 +1,7 @@
 # K-F3M7BO
 ## Developers:
 * Olli Appelt
-* Byron Herrewaarden
+* Byron van Herrewaarden
 ## Artists: 
 * Ryan van Ingen
 * Marcellus Moerman
