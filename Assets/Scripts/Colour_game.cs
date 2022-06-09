@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Colour_game : MonoBehaviour
 {
-    public Material[] materialslist = new Material[3];
+    public Material[] materialslist = new Material[6];
     //Material currentmaterial;
     public int cycle = 0;
     Renderer rend;
@@ -29,7 +29,7 @@ public class Colour_game : MonoBehaviour
     IEnumerator timer()
     {
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.8f);
         
         cycle += 1;
         StartCoroutine(timer());
@@ -56,7 +56,7 @@ public class Colour_game : MonoBehaviour
         if (cycletrue == true)
         {
            
-            if (cycle > 2)
+            if (cycle > 5)
             {
                 cycle = 0;
 
