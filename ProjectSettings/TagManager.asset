@@ -13,6 +13,8 @@ TagManager:
   - Item7
   - Item8
   - Item9
+  - MapDot
+  - MapWin
   layers:
   - Default
   - TransparentFX
