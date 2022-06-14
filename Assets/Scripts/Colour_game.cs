@@ -30,7 +30,7 @@ public class Colour_game : MonoBehaviour
     {
 
         yield return new WaitForSeconds(0.8f);
-        
+
         cycle += 1;
         StartCoroutine(timer());
 
@@ -38,15 +38,20 @@ public class Colour_game : MonoBehaviour
 
     private void OnMouseDown()
     {
-        
+
         cycletrue = !cycletrue;
-      
-        
+
+
     }
 
     private void Update()
     {
-        if(cycletrue == false && Isred == true)
+
+
+
+
+
+        if (cycletrue == false && Isred == true)
         {
             won = true;
         }
@@ -55,24 +60,59 @@ public class Colour_game : MonoBehaviour
 
         if (cycletrue == true)
         {
-           
+
             if (cycle > 5)
             {
                 cycle = 0;
 
             }
-            if (cycle == 2)
+
+            if (gameObject.tag == "Screen2")
             {
-                Debug.Log("Is now red ");
-                Isred = true;
+                if (cycle == 5)
+                {
+                    Debug.Log("Is now red ");
+                    Isred = true;
+                }
+                else
+                {
+                    Isred = false;
+                }
+
+
             }
-            else
+            if (gameObject.tag == "Screen3")
             {
-                Isred = false;
+                if (cycle == 0)
+                {
+                    Debug.Log("Is now red ");
+                    Isred = true;
+                }
+                else
+                {
+                    Isred = false;
+                }
+
             }
+
+            else if (gameObject.tag == "Screen1")
+            {
+                if (cycle == 2)
+                {
+                    Debug.Log("Is now red ");
+                    Isred = true;
+                }
+                else
+                {
+                    Isred = false;
+                }
+
+
+            }
+
             rend.sharedMaterial = materialslist[cycle];
         }
-        
+
     }
 
 
