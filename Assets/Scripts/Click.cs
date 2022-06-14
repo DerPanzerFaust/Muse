@@ -13,7 +13,7 @@ public class Click : MonoBehaviour
 
     private void Update()
     {
-        transform.LookAt(player);
+       
     }
 
     

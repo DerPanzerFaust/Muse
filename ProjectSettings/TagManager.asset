@@ -13,6 +13,9 @@ TagManager:
   - Item7
   - Item8
   - Item9
+  - Screen1
+  - Screen2
+  - Screen3
   layers:
   - Default
   - TransparentFX

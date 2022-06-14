@@ -4,16 +4,43 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
+    public bool leftlimitreached;
+    public bool rightlimitreached;
+
+
+
     public void Update()
     {
-        if (Input.GetKey("left"))
+        if (Input.GetKey("left") && leftlimitreached == false)
         {
-            transform.Rotate(new Vector3(0, -150, 0) * Time.deltaTime);
+            transform.Translate(new Vector3(-5, 0, 0) * Time.deltaTime);
         }
 
-        if (Input.GetKey("right"))
+        if (Input.GetKey("right")&& rightlimitreached == false)
         {
-            transform.Rotate(new Vector3(0, 150, 0) * Time.deltaTime);
+            transform.Translate(new Vector3(5, 0, 0) * Time.deltaTime);
         }
+        if (transform.position.x > 9.23f)
+        {
+            rightlimitreached = true;
+
+        }
+        else
+        {
+            rightlimitreached = false;
+
+        }
+        if (transform.position.x < -9.4f)
+        {
+            leftlimitreached = true;
+
+        }
+        else
+        {
+            leftlimitreached = false;
+
+
+        }
+
     }
 }
