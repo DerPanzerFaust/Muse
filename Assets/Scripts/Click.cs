@@ -9,8 +9,15 @@ public class Click : MonoBehaviour
     public Transform player;
     public GameObject aPrefab;
 
-   
-
+    public GameObject Item1;
+    public GameObject Item2;
+    public GameObject Item3;
+    public GameObject Item4;
+    public GameObject Item5;
+    public GameObject Item6;
+    public GameObject Item7;
+    public GameObject Item8;
+    public GameObject Item9;
     private void Update()
     {
        
@@ -24,7 +31,7 @@ public class Click : MonoBehaviour
         {
             playerdata.item = true;
             Destroy(gameObject);
-            Instantiate(aPrefab, new Vector3(0.1594f, 0.2912f, 1.38f), Quaternion.identity);
+            Item1.SetActive(true);
 
             Debug.Log("clicked");
         }
@@ -33,7 +40,7 @@ public class Click : MonoBehaviour
         {
             playerdata.item2 = true;
             Destroy(gameObject);
-            Instantiate(aPrefab, new Vector3(-0.021f, 0.2912f, 1.38f), Quaternion.identity);
+            Item2.SetActive(true);
 
             Debug.Log("clicked2");
         }
@@ -42,7 +49,7 @@ public class Click : MonoBehaviour
         {
             playerdata.item3 = true;
             Destroy(gameObject);
-            Instantiate(aPrefab, new Vector3(-0.204f, 0.2912f, 1.38f), Quaternion.identity);
+            Item3.SetActive(true);
 
             Debug.Log("clicked 3");
         }
@@ -50,7 +57,7 @@ public class Click : MonoBehaviour
         {
             playerdata.item4 = true;
             Destroy(gameObject);
-            Instantiate(aPrefab, new Vector3(0.1594f, 0.544f, 1.38f), Quaternion.identity);
+            Item4.SetActive(true);
 
             Debug.Log("clicked 4");
         }
@@ -58,7 +65,7 @@ public class Click : MonoBehaviour
         {
             playerdata.item5 = true;
             Destroy(gameObject);
-            Instantiate(aPrefab, new Vector3(-0.021f, 0.544f, 1.38f), Quaternion.identity);
+            Item5.SetActive(true);
 
             Debug.Log("clicked 5");
         }
@@ -66,7 +73,7 @@ public class Click : MonoBehaviour
         {
             playerdata.item6 = true;
             Destroy(gameObject);
-            Instantiate(aPrefab, new Vector3(-0.204f, 0.544f, 1.38f), Quaternion.identity);
+            Item6.SetActive(true);
 
             Debug.Log("clicked 6");
         }
@@ -74,7 +81,7 @@ public class Click : MonoBehaviour
         {
             playerdata.item7 = true;
             Destroy(gameObject);
-            Instantiate(aPrefab, new Vector3(0.1594f, 0.785f, 1.38f), Quaternion.identity);
+            Item7.SetActive(true);
 
             Debug.Log("clicked 7");
         }
@@ -82,7 +89,7 @@ public class Click : MonoBehaviour
         {
             playerdata.item8 = true;
             Destroy(gameObject);
-            Instantiate(aPrefab, new Vector3(-0.021f, 0.785f, 1.38f), Quaternion.identity);
+            Item8.SetActive(true);
 
             Debug.Log("clicked 8");
         }
@@ -90,7 +97,7 @@ public class Click : MonoBehaviour
         {
             playerdata.item9 = true;
             Destroy(gameObject);
-            Instantiate(aPrefab, new Vector3(-0.204f, 0.785f, 1.38f), Quaternion.identity);
+            Item9.SetActive(true);
 
             Debug.Log("clicked 9");
         }
