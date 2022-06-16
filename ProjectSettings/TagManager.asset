@@ -15,6 +15,10 @@ TagManager:
   - Item9
   - MapDot
   - MapWin
+=======
+  - Screen1
+  - Screen2
+  - Screen3
   layers:
   - Default
   - TransparentFX
