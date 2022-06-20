@@ -8,7 +8,11 @@ public class button : MonoBehaviour
     public Leveraction lever;
     public PlayerData PlayerData;
     
-
+    public void GameOFF()
+    {
+        Application.Quit();
+        Debug.Log("Is turning off BUT Cant thanks to Unity's shitty playmode :)");
+    }
     public void Combine()
     {
         if (lever.fusion1 == true)

@@ -9,8 +9,11 @@ public class UI_help : MonoBehaviour
     public GameObject smollui;
     public GameObject bigui;
     public GameObject Craftingsys;
+    public GameObject MainMenuObj;
+
     public bool switchcraft = false;
     public bool switchingMenu = false;
+    public bool MainMenu = false;
    
 
     // Start is called before the first frame update
@@ -39,7 +42,23 @@ public class UI_help : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Main Menu GO");
+            MainMenu = !MainMenu;
+            if(MainMenu == true)
+            {
+                MainMenuObj.SetActive(true);
+            }
+            if(MainMenu == false)
+            {
+                MainMenuObj.SetActive(false);
+            }
+        
+        
+        }
+
+            if (Input.GetKeyDown(KeyCode.H))
         {
             Debug.Log("Should be switching Helpmenu");
             switchingMenu = !switchingMenu;

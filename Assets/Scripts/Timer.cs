@@ -4,12 +4,12 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     [SerializeField]
-    private float timerDuration = 3f * 60f; //Duration of the timer in seconds
+    public float timerDuration = 3f * 60f; //Duration of the timer in seconds
 
     [SerializeField]
-    private bool countDown = true;
+    public bool countDown = true;
 
-    private float timer;
+    public float timer;
     [SerializeField]
     private TextMeshProUGUI firstMinute;
     [SerializeField]
@@ -49,7 +49,16 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (countDown && timer > 0)
+        if ( timer == 3)
+        {
+            Debug.Log("2");
+        
+        
+        
+        }
+
+
+            if (countDown && timer > 0)
         {
             timer -= Time.deltaTime;
             UpdateTimerDisplay(timer);
@@ -108,6 +117,7 @@ public class Timer : MonoBehaviour
     {
         if (countDown && timer != 0)
         {
+            Debug.Log("Timer is 0");
             timer = 0;
             UpdateTimerDisplay(timer);
         }

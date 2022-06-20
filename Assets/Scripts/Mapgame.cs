@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Mapgame : MonoBehaviour
 {
+    public GameObject reward;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class Mapgame : MonoBehaviour
         if (gameObject.tag == "MapWin")
         {
             Debug.Log("Win punt");
+            reward.SetActive(true);
         }
 
     }
