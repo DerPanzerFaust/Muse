@@ -40,6 +40,7 @@ public class Colour_game : MonoBehaviour
     {
 
         cycletrue = !cycletrue;
+        won = false;
 
 
     }

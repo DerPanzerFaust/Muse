@@ -20,9 +20,12 @@ public class CameraControl : MonoBehaviour
         {
             transform.Translate(new Vector3(5, 0, 0) * Time.deltaTime);
         }
-        if (transform.position.x < -14.88f)
+        if (transform.position.x < -14.3f)
         {
+
+            //transform.position = new Vector3 (5f, 0.3833332f, -112.3f);
             rightlimitreached = true;
+            
 
         }
         else
@@ -30,7 +33,7 @@ public class CameraControl : MonoBehaviour
             rightlimitreached = false;
 
         }
-        if (transform.position.x > 5.05f) 
+        if (transform.position.x > 6.6f) 
         {
             leftlimitreached = true;
 
