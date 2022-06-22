@@ -35,3 +35,4 @@ ________________________________________________________________________________
 ## Documents:
 * <a href="/Documents/Logboek.pdf">Logboek</a>
 * <a href="/Documents/Concept.pdf">Concept</a>
+* <a href="/Documents/StandUps.pdf">StandUps</a>
