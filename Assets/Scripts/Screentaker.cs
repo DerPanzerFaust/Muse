@@ -8,6 +8,8 @@ public class Screentaker : MonoBehaviour
     public Colour_game Screen2;
     public Colour_game Screen3;
     public GameObject Hiddenitem;
+    public GameObject VaultCLose;
+    public GameObject VaultOpen;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,8 @@ public class Screentaker : MonoBehaviour
         if(Screen1.won == true && Screen2.won == true && Screen3.won == true)
         {
             Hiddenitem.SetActive(true);
+            VaultCLose.SetActive(false);
+            VaultOpen.SetActive(true);
             Debug.Log("WIN!");
         }
     }

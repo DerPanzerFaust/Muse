@@ -7,7 +7,46 @@ public class button : MonoBehaviour
     public GameObject buttons;
     public Leveraction lever;
     public PlayerData PlayerData;
-    
+    public GameObject key;
+    public GameObject Ironkey;
+
+    public GameObject BookRed;
+    public GameObject BookBlue;
+    public GameObject BookBrown;
+    public GameObject BookGreen;
+    public GameObject BookOran;
+
+
+
+
+
+    public void CloseBookred()
+    {
+       BookRed .SetActive(false);
+    }
+    public void CloseBookblue()
+    {
+        BookBlue.SetActive(false);
+    }
+    public void CloseBookbrown()
+    {
+        BookBrown.SetActive(false);
+    }
+    public void CloseBookgreen()
+    {
+        BookGreen.SetActive(false);
+       
+    }
+    public void CloseBookoran()
+    {
+        BookOran.SetActive(false);
+    }
+
+    public void GetKey()
+    {
+        PlayerData.IronKey = true;
+        Destroy(Ironkey);
+    }
     public void GameOFF()
     {
         Application.Quit();
@@ -23,6 +62,9 @@ public class button : MonoBehaviour
             lever.item2.isOn = false;
             lever.item3.isOn = false;
             lever.item4.isOn = false;
+            Debug.Log("YAAA");
+            key.SetActive(true);
+
         }
 
         if (lever.fusion2 == true)

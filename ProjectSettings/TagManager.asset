@@ -3,7 +3,29 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - MapDot
+  - Screen3
+  - Screen1
+  - item1
+  - MapWin
+  - Screen2
+  - Item4
+  - Item6
+  - Item9
+  - Item3
+  - Item5
+  - Item7
+  - Item8
+  - item2
+  - KartonSlot
+  - 1row
+  - 2row
+  - Oran
+  - Green
+  - Brown
+  - Blue
+  - Red
   layers:
   - Default
   - TransparentFX

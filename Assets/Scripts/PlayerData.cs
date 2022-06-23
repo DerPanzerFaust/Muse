@@ -10,6 +10,10 @@ public class PlayerData : MonoBehaviour
     public GameObject comite3;
     public GameObject comite4;
 
+
+
+    public bool IronKey;
+
     //Dit is de combined tools storage
     public bool tool1 = false;
     public bool tool2 = false;
@@ -45,11 +49,12 @@ public class PlayerData : MonoBehaviour
         if (item3 == true)
         {
             Debug.Log("item3 collected");
+            comite1.SetActive(true);
         }
         if (item4 == true)
         {
             Debug.Log("item4 collected");
-            comite1.SetActive(true);
+            
         }
         if (item5 == true)
         {
@@ -58,7 +63,7 @@ public class PlayerData : MonoBehaviour
         if (item6 == true)
         {
             Debug.Log("item6 collected");
-            comite2.SetActive(true);
+           // comite2.SetActive(true);
 
         }
         if (item7 == true)
@@ -68,13 +73,13 @@ public class PlayerData : MonoBehaviour
         if (item8 == true)
         {
             Debug.Log("item8 collected");
-            comite3.SetActive(true);
+            comite2.SetActive(true);
 
         }
         if (item9 == true)
         {
             Debug.Log("item9 collected");
-            comite4.SetActive(true);
+            //comite4.SetActive(true);
 
         }
 
