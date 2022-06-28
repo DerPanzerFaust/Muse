@@ -6,7 +6,7 @@ public class CameraControl : MonoBehaviour
 {
     public bool leftlimitreached;
     public bool rightlimitreached;
-
+    public GameObject HelpDissapear;
 
 
     public void Update()
@@ -28,6 +28,8 @@ public class CameraControl : MonoBehaviour
             
 
         }
+      
+
         else
         {
             rightlimitreached = false;
@@ -43,6 +45,18 @@ public class CameraControl : MonoBehaviour
             leftlimitreached = false;
 
 
+        }
+
+
+
+
+        if (rightlimitreached == true)
+        {
+            HelpDissapear.SetActive(false);
+        }
+        if (rightlimitreached == false)
+        {
+            HelpDissapear.SetActive(true);
         }
 
     }

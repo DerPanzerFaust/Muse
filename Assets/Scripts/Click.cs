@@ -18,6 +18,9 @@ public class Click : MonoBehaviour
     public GameObject Item7;
     public GameObject Item8;
     public GameObject Item9;
+
+    public GameObject self;
+
     private void Update()
     {
        
@@ -27,6 +30,15 @@ public class Click : MonoBehaviour
 
     private void OnMouseDown()
     {
+
+        if(gameObject.tag == "KartonSlot" && playerdata.tool1 == true )
+        {
+            Debug.Log("A");
+            Item8.SetActive(true);
+            Destroy(self);
+            Debug.Log("clicked 8");
+        }
+
         if (gameObject.tag == "item1")
         {
             playerdata.item = true;
@@ -89,9 +101,8 @@ public class Click : MonoBehaviour
         {
             playerdata.item8 = true;
             Destroy(gameObject);
-            Item8.SetActive(true);
-
-            Debug.Log("clicked 8");
+           
+            
         }
         if (gameObject.tag == "Item9")
         {

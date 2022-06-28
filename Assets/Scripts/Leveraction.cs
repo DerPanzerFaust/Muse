@@ -36,6 +36,7 @@ public class Leveraction : MonoBehaviour
             gitem4.SetActive(false);
             item3.isOn = false;
             item4.isOn = false;
+            
         }
         if (item2.isOn == true)
         {
@@ -65,6 +66,7 @@ public class Leveraction : MonoBehaviour
         {
             fusion1 = true;
             fusion2 = false;
+            Debug.Log(fusion1);
         }
 
         if (item3.isOn == true && item4.isOn == true)

@@ -120,6 +120,7 @@ public class Timer : MonoBehaviour
             Debug.Log("Timer is 0");
             timer = 0;
             UpdateTimerDisplay(timer);
+            Application.Quit();
         }
 
         if (!countDown && timer != timerDuration)
