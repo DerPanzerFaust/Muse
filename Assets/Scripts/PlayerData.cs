@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerData : MonoBehaviour
 {
@@ -10,6 +11,15 @@ public class PlayerData : MonoBehaviour
     public GameObject comite3;
     public GameObject comite4;
 
+    public isCollected IsCo1;
+    public isCollected IsCo2;
+    public isCollected IsCo3;
+    public isCollected IsCo4;
+    public isCollected IsCo5;
+    public isCollected IsCo6;
+    public isCollected IsCo7;
+    public isCollected IsCo8;
+    public isCollected IsCo9;
 
 
     public bool IronKey;
@@ -82,6 +92,12 @@ public class PlayerData : MonoBehaviour
             //comite4.SetActive(true);
 
         }
+        if (IsCo1.IsCollected == true && IsCo2.IsCollected == true && IsCo3.IsCollected == true && IsCo4.IsCollected == true && IsCo5.IsCollected == true && IsCo6.IsCollected == true && IsCo7.IsCollected == true && IsCo8.IsCollected == true && IsCo9.IsCollected == true)
+        {
+            Debug.Log("All Collected");
+            SceneManager.LoadScene("WinScreen");
+        }
+        
 
     }
 }

@@ -16,7 +16,7 @@ public class button : MonoBehaviour
     public GameObject BookGreen;
     public GameObject BookOran;
 
-
+    public AudioSource craft;
 
 
 
@@ -63,6 +63,9 @@ public class button : MonoBehaviour
             lever.item3.isOn = false;
             lever.item4.isOn = false;
             Debug.Log("YAAA");
+            craft.Play();
+
+
             key.SetActive(true);
 
         }

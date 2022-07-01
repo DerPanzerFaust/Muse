@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -51,10 +52,12 @@ public class Timer : MonoBehaviour
     {
         if ( timer == 3)
         {
-            Debug.Log("2");
+            Debug.Log("2");       
+        }
         
-        
-        
+        if( timer == 0)
+        {
+            SceneManager.LoadScene("FailScreen");
         }
 
 
@@ -120,7 +123,7 @@ public class Timer : MonoBehaviour
             Debug.Log("Timer is 0");
             timer = 0;
             UpdateTimerDisplay(timer);
-            Application.Quit();
+            //Application.Quit();
         }
 
         if (!countDown && timer != timerDuration)
